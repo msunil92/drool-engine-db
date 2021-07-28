@@ -66,18 +66,17 @@ public class DroolsConfiguration {
     private KieServices getKieServices() {
         return KieServices.Factory.get();
     }
-    
+
     @Bean
     @ConditionalOnMissingBean(KieBase.class)
     public KieBase kieBase() throws IOException {
         return kieContainer().getKieBase();
     }
-    
+
     @Bean
     @ConditionalOnMissingBean(KieSession.class)
     public KieSession kieSession() throws IOException {
         return kieContainer().newKieSession();
     }
-
 
 }

@@ -4,6 +4,12 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @author sunil
+ * @project spring-boot-drools-db
+ * @created 2021/07/28 12:45 PM
+ */
+
 @Entity
 @Data
 @AllArgsConstructor
