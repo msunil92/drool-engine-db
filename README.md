@@ -1,6 +1,6 @@
-#drool-engine-db-main
+# drool-engine-db-main
 
-####MYSQL DB:
+#### MYSQL DB:
     
     select * from rules_entity;
     
@@ -18,7 +18,7 @@
 
 
 
-####POSTGRESS DB:
+#### POSTGRESS DB:
     
     select * from rules_entity;
     
@@ -32,7 +32,7 @@
     );
 
 
-####API's:
+#### API's:
     
     GET: http://localhost:8080/api/reload
     
@@ -45,7 +45,7 @@
     POST: http://localhost:8080/api/save_rule
         request is rules in string format
 
-####Rule Engine:
+#### Rule Engine:
     
     import com.learn.ruleengine.model.Customer;
     import com.learn.ruleengine.model.RuleObject;
