@@ -1,0 +1,22 @@
+import com.learn.ruleengine.model.Customer;
+import com.learn.ruleengine.model.RuleObject;
+
+
+rulesEntity "Bond check"
+when
+    customerObj: Customer(bond == 7)
+then
+	customerObj.setOffers(1000);
+	customerObj.setStatus("Super duper");
+end
+
+
+rulesEntity "Bond check with Validation"
+when
+    customerObj: Customer(bond == 7)
+    ruleObject: RuleObject()
+then
+	customerObj.setOffers(1000);
+	customerObj.setStatus("Super duper");
+	ruleObject.setValid(true);
+end
